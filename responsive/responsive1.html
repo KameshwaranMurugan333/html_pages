@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responve Design 1</title>
+    <!-- View Port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        #tablet,
+        #mobile {
+            display: none;
+        }
+
+        #web {
+            display: block;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #web,
+            #mobile {
+                display: none;
+            }
+
+            #tablet {
+                display: block;
+            }
+        }
+
+        @media only screen and (max-width: 425px){
+            #web,
+            #tablet {
+                display: none;
+            }
+
+            #mobile {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p id="web">I am in Web Device</p>
+    <p id="tablet">I am in Tablet</p>
+    <p id="mobile">I am in Mobile</p>
+</body>
+
+</html>
